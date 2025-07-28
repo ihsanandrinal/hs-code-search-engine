@@ -4,7 +4,7 @@ import React, { useState } from 'react';
      import axios from 'axios';
      import './App.css';
 
-     const searchClient = algoliasearch('MXRRPKCZEL', 'aff6cdc5cb37795daf354b923d60b564');
+     const searchClient = algoliasearch('MXRRPKCZEL', 'your-algolia-admin-api-key');
 
      const Hit = ({ hit }) => {
        const [analysis, setAnalysis] = useState('');
