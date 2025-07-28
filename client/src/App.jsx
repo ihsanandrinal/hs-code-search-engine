@@ -13,7 +13,7 @@ import React, { useState } from 'react';
        const enrichWithClaude = async () => {
          setLoading(true);
          try {
-           const response = await axios.post('http://localhost:3001/enrich', {
+           const response = await axios.post('https://hs-code-commodity-search-api-0223bcf67f0c.herokuapp.com/enrich', {
              commodity: hit.commodity,
              indonesia_tariff: hit.indonesia_tariff,
              usa_tariff: hit.usa_tariff
